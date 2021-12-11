@@ -15,25 +15,24 @@ The table above clearly shows a very high number of Senior level Engineers and S
 - Management is Fine
 Only two managers are in the retirement age range, so let's not go looking to hire more managers.  
 
--- The Mentorship Program Can Help Prepare for the Tsunami of Retirees
+- The Mentorship Program Can Help Prepare for the Tsunami of Retirees
 A transitioning program that will allow older employees to begin the retirement process while also contributing to the maintanence of the high quality of work is great idea. Only searching for people born in 1965, which is completely arbitrary, yielded a large list of 1549 employees that could mentor newer employees until they were at the point of taking Senior level responsibility. Expanding the age range or looking instead at years with the Pewlett-Hackard would definitely lead to even more potential mentors.
 
--- Mentoring won't be enough alone
+- Mentoring won't be enough alone
 Even expanding the mentorship won't be enough to compensate for the total number of retirees. Pewlett-Hackard will need to go on an immediate, extensive talent search and expect to have to pay these young whipper snappers.
 
--- Summary
+## Summary
 
---- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 Based on the data in the retiring_titles table, a total of 90,398 roles will need to be filled.
 After filtering out titles that had already ended and recalculating, 74,458 jobs will need to be filled.
 
---- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 If we go by the mentoring search in the challenge, there is not near enough retirement-ready employees to mentor the next generation. If we include every employee, not just employees born in 1965, there may be enough to get a good number of people mentored. It's also notable that there are many non-senior level positions that are the retirement age as well so, senior level positions won't all be able to be filled internally. For example, looking at currently employed Senior Engineers in Production, 10189 are retiring. 3611 Engineers in Production are retiring as well, which will leave less than 9000 Engineers in Production. 9000 is less than than 10,000+ Senior engineers retiring. Below is a table with current employee counts, retiring age employee counts, pct of title retiring broken down by department and title.
 
+<img src = "https://github.com/AaronAKTX/Pewlett-Hackard-Analysis/blob/main/current_emp_counts_by_dept_title.csv">
 
-
-
-
+- Below is the query used to create the table above. The complete csv is also included in this repository.
 with emp_counts as(
 SELECT  count(e1.emp_no) as count_current_emp, t1.title, d.dept_name, coalesce(e2.retiring_current_emp,0) as count_of_retiring_age_emp
 FROM 
