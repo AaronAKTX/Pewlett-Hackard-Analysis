@@ -1,0 +1,29 @@
+SELECT distinct e.emp_no FROM EMployees e
+inner join titles t on e.emp_no = t.emp_no
+where t.to_date = '9999-01-01'
+
+
+SELECT count(e.emp_no) as Emp_count, coalesce(r.retiree_emp_count,0) as retiring_emp_count, d.dept_name, t.title
+FROM EMployees e
+inner join dept_emp de on e.emp_no = de.emp_no
+inner join departments d on de.dept_no = d.dept_no
+inner join titles t on e.emp_no = t.emp_no
+
+LEFT JOIN (
+SELECT COALESCE(count(e.emp_no),0) as retiree_emp_count, d.dept_name, t.title
+FROM EMployees e
+inner join dept_emp de on e.emp_no = de.emp_no
+inner join departments d on de.dept_no = d.dept_no
+inner join titles t on e.emp_no = t.emp_no
+where de.to_date = '9999-01-01' and t.to_date = '9999-01-01' and birth_date BETWEEN '1952-01-01' AND '1955-12-31'
+group by d.dept_name, t.title) as r
+on d.dept_name = r.dept_name and t.title = r.title
+where de.to_date = '9999-01-01' and t.to_date = '9999-01-01'
+group by r.retiree_emp_count, d.dept_name, t.title
+order by dept_name,title,emp_count
+
+
+
+
+group by d.dept_name, t.title
+order by dept_name,title,emp_count

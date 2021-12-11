@@ -1,0 +1,46 @@
+count_current_emp,count_of_retiring_age_emp,pct_workforce_retiring,title,dept_name
+68,22,32.35,Assistant Engineer,Customer Service
+627,188,29.98,Engineer,Customer Service
+1,0,0.00,Manager,Customer Service
+1790,545,30.45,Senior Engineer,Customer Service
+11268,3453,30.64,Senior Staff,Customer Service
+3574,1048,29.32,Staff,Customer Service
+241,64,26.56,Technique Leader,Customer Service
+1652,496,30.02,Assistant Engineer,Development
+14040,4191,29.85,Engineer,Development
+1,0,0.00,Manager,Development
+38816,11644,30.00,Senior Engineer,Development
+1085,329,30.32,Senior Staff,Development
+315,118,37.46,Staff,Development
+5477,1590,29.03,Technique Leader,Development
+1,0,0.00,Manager,Finance
+9545,2884,30.21,Senior Staff,Finance
+2891,875,30.27,Staff,Finance
+1,0,0.00,Manager,Human Resources
+9824,2996,30.50,Senior Staff,Human Resources
+3073,929,30.23,Staff,Human Resources
+1,0,0.00,Manager,Marketing
+11290,3355,29.72,Senior Staff,Marketing
+3551,1037,29.20,Staff,Marketing
+1402,426,30.39,Assistant Engineer,Production
+12081,3611,29.89,Engineer,Production
+1,0,0.00,Manager,Production
+33625,10189,30.30,Senior Engineer,Production
+1123,390,34.73,Senior Staff,Production
+349,99,28.37,Staff,Production
+4723,1457,30.85,Technique Leader,Production
+389,125,32.13,Assistant Engineer,Quality Management
+3405,1051,30.87,Engineer,Quality Management
+1,0,0.00,Manager,Quality Management
+9458,2874,30.39,Senior Engineer,Quality Management
+1293,398,30.78,Technique Leader,Quality Management
+77,21,27.27,Assistant Engineer,Research
+830,244,29.40,Engineer,Research
+1,1,100.00,Manager,Research
+2250,664,29.51,Senior Engineer,Research
+9092,2834,31.17,Senior Staff,Research
+2870,880,30.66,Staff,Research
+321,94,29.28,Technique Leader,Research
+1,1,100.00,Manager,Sales
+28797,8685,30.16,Senior Staff,Sales
+8903,2650,29.77,Staff,Sales
